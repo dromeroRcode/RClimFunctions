@@ -66,8 +66,8 @@ ClimGar<-function (x,y){
       if (reg=="ver"){if ((Tclim1=="A" | Tclim1=="A(C)") && graph=="hum") {if (PPInv<5) {Tclim2="m(w)"} else if (PPInv<10.2) {Tclim2="m"} else {Tclim2="m(f)"}}
         if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C") &&  graph=="hum") {if (PPInv<5) {Tclim2="(m)(w)"} else if (PPInv<10.2) {Tclim2="(m)"} else {Tclim2="(f)(m)"}}
         if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa>55 &&  graph=="subhum") {if (PPInv<5) {Tclim2="(w2)(w)"} else if (PPInv<10.2) {Tclim2="(w2)"} else {Tclim2="(w2)(x')"}}
-        if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa>55.3 && graph=="subhum") {if (PPInv<5) {Tclim2="w2(w)"} else if (PPInv<10.2) {Tclim2="w2"} else {Tclim2="w2(x')"}}    
-        if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<55 && PaTa>43.2 && (Pmin<(100-(Ptot/25)))) {if (PPInv<5) {Tclim2="(w1)(w)"} else if (PPInv<10.2) {Tclim2="(w1)"} else {Tclim2="(w1)(x')"}}
+        if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa>=55.3 && graph=="subhum") {if (PPInv<5) {Tclim2="w2(w)"} else if (PPInv<10.2) {Tclim2="w2"} else {Tclim2="w2(x')"}}    
+        if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<55 && PaTa>=43.2 && (Pmin<(100-(Ptot/25)))) {if (PPInv<5) {Tclim2="(w1)(w)"} else if (PPInv<10.2) {Tclim2="(w1)"} else {Tclim2="(w1)(x')"}}
         if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa<55.3 && PaTa>43.2 &&  graph=="subhum") {if (PPInv<5) {Tclim2="w1(w)"} else if (PPInv<10.2) {Tclim2="w1"} else {Tclim2="w1(x')"}}
         if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<43.2 &&  graph=="subhum") {if (PPInv<5) {Tclim2="(w0)(w)"} else if (PPInv<10.2) {Tclim2="(w0)"} else {Tclim2="(w0)(x')"}}
         if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa<43.2 &&  graph=="subhum") {if (PPInv<5) {Tclim2="w0(w)"} else if (PPInv<10.2) {Tclim2="w0"} else {Tclim2="w0(x')"}}
@@ -75,9 +75,9 @@ ClimGar<-function (x,y){
           if ((Tclim1=="A" | Tclim1=="A(C)") &&  graph=="hum") {if (PPInv<18) {Tclim2="f(m)"} else {Tclim2="f"}}
           if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") &&  graph=="hum") {if (PPInv<18) {Tclim2="(fm)"} else {Tclim2="(f)"}}
           if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa>55 &&  graph=="subhum") {if (PPInv<18) {Tclim2="(x')(w2)"} else {Tclim2="x'"}}
-          if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa>55.3 &&  graph=="subhum") {if (PPInv<18) {Tclim2="x'(w2)"} else {Tclim2="x'"}}
-          if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<55 && PaTa>43.2 && (Pmin<(100-(Ptot/25)))) {if (PPInv<18) {Tclim2="(x')(w1)"} else {Tclim2="x'"}}
-          if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa<55.3 && PaTa>43.2 &&  graph=="subhum") {if (PPInv<18) {Tclim2="x'(w2)"} else {Tclim2="x'"}}
+          if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa>=55.3 &&  graph=="subhum") {if (PPInv<18) {Tclim2="x'(w2)"} else {Tclim2="x'"}}
+          if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<55 && PaTa>=43.2 && (Pmin<(100-(Ptot/25)))) {if (PPInv<18) {Tclim2="(x')(w1)"} else {Tclim2="x'"}}
+          if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa<55.3 && PaTa>=43.2 &&  graph=="subhum") {if (PPInv<18) {Tclim2="x'(w2)"} else {Tclim2="x'"}}
           if ((Tclim1=="C" | Tclim1=="D" | Tclim1=="(A)C" | Tclim1=="E") && PaTa<43.2 &&  graph=="subhum") {if (PPInv<18) {Tclim2="(x')(w0)"} else  {Tclim2="x'"}}
           if ((Tclim1=="A" | Tclim1=="A(C)") && PaTa<43.2 &&  graph=="subhum") {if (PPInv<18) {Tclim2="x'(w2)"} else {Tclim2="x'"}}
           if (Tclim1=="BS0" | Tclim1=="BS1"| Tclim1=="BW") {if (PPInv<18) {Tclim2="x'(w)"} else {Tclim2="x'"}}} else if (reg=="inv"){
